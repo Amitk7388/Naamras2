@@ -15,6 +15,7 @@ const localStrategy = require('passport-local').Strategy;
 const session = require('express-session')
 const GoogleStrategy = require('passport-google-oauth').OAuthStrategy;
 const facebookStrategy = require('passport-facebook').Strategy
+var gi = require(`gitignore`);
 
 
 
