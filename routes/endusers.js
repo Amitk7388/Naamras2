@@ -64,7 +64,7 @@ passport.use(new localStrategy(function(email, password, done, ){
 // CREATING MANAGERS API ROUTING AFTER LOGIN AUTHENTIATION
 
 router.post('/login/api', function(req, res, next){
-    FIXME:
+    
     // there will be two form name -> email id && -> password
     var email= req.body.email;
     var password = req.body.password;

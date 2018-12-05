@@ -155,7 +155,7 @@ router.post('/changeevenimage/:id', upload.single('image'), function(req, res, n
     if(errors){
         res.status(500).json({status:false, response:errors, devMessage : 'validation has not been completed of form'})
     }else{
-        TODO: // need to chek the filename after getting file type
+        // need to chek the filename after getting file type
         var imageNewName = req.file.fileName;
         Events.findByIdAndUpdate(id, {imageName : imageNewName}, function(err, changedDone){
             if(err){
